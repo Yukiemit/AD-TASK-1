@@ -11,7 +11,7 @@
         <?php
         $days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
         for ($i = 0; $i < count($days); $i++) {
-            echo "<a class='day' href='schedule.php?day=" . $days[$i] . "'>" . $days[$i] . </a>;
+            echo '<a class='day-link' href="' . strtolower($days[$i]) . '.php">' . $days[$i] . '</a>';
         }
         ?>
     </div>
